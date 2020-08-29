@@ -1,0 +1,31 @@
+{
+    "pages": ["pages/obtain/obtain", "pages/academic/academic"],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#800080",
+        "navigationBarTitleText": "信息采集",
+        "navigationBarTextStyle": "white"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "color": "",
+        "selectedColor": "",
+        "backgroundColor": "",
+        "position": "bottom",
+        "borderStyle": "black",
+        "list": [{
+                "pagePath": "pages/obtain/obtain",
+                "text": "获奖信息采集",
+                "iconPath": "/assets/tabbar/home.png",
+                "selectedIconPath": "/assets/tabbar/home_active.png"
+            },
+            {
+                "pagePath": "pages/academic/academic",
+                "text": "学术信息采集",
+                "iconPath": "/assets/tabbar/category.png",
+                "selectedIconPath": "/assets/tabbar/category_active.png"
+            }
+        ]
+    }
+}

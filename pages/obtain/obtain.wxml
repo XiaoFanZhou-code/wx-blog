@@ -1,0 +1,103 @@
+<!--pages/obtain/obtain.wxml-->
+<view>
+	<mp-form id="form" rules="{{rules}}" models="{{formData}}">
+		<mp-cell show-error prop="studentName" title="名字：" ext-class="">
+			<input bindinput="formInputChange" data-field="studentName" class="weui-input" placeholder="请输入名字" />
+		</mp-cell>
+		<mp-cell show-error prop="studentNumber" title="学号：" ext-class="">
+			<input bindinput="formInputChange" data-field="studentNumber" class="weui-input" placeholder="请输入学号" />
+		</mp-cell>
+		<mp-cells title="请输入您的专业简称">
+			<mp-cell show-error prop="major" title="专业：" ext-class="">
+				<input bindinput="formInputChange" data-field="major" class="weui-input" placeholder="请输入专业" />
+			</mp-cell>
+		</mp-cells>
+		<mp-cells title="填学校发的农行卡号">
+			<mp-cell show-error prop="cardNumber" title="卡号：" ext-class="">
+				<input bindinput="formInputChange" data-field="cardNumber" class="weui-input" placeholder="卡号" />
+			</mp-cell>
+		</mp-cells>
+		<mp-cells title="获奖时间格式：如2020.9">
+			<mp-cell show-error prop="obtainTime" title="获奖时间：" ext-class="">
+				<input bindinput="formInputChange" data-field="obtainTime" class="weui-input" placeholder="请输入获奖时间" />
+			</mp-cell>
+			<!-- 团队名字 -->
+			<mp-cells title="如实填写团队名，比赛时的名字">
+				<mp-cell show-error prop="teamSituation" title="团队名字：" ext-class="">
+					<input bindinput="formInputChange" data-field="teamSituation" class="weui-input" placeholder="请输入团队名称" />
+				</mp-cell>
+			</mp-cells>
+		</mp-cells>
+		<!-- 指导老师 -->
+		<mp-cell show-error prop="adviser" title="指导老师：" ext-class="">
+			<input bindinput="formInputChange" data-field="adviser" class="weui-input" placeholder="请输入指导名字" />
+		</mp-cell>
+	</mp-form>
+	<!-- 选择竞赛名称 -->
+	<view class="weui-cells__title">年级</view>
+	<view class="weui-cells weui-cells_after-title">
+		<view class="weui-cell weui-cell_select">
+			<view class="weui-cell__bd">
+				<picker bindchange="bindAccountChange5" value="{{accountIndex5}}" range="{{accounts5}}">
+					<view class="weui-select">{{accounts5[accountIndex5]}}</view>
+				</picker>
+			</view>
+		</view>
+	</view>
+	<!-- 选择竞赛名称 -->
+	<view class="weui-cells__title">竞赛名称</view>
+	<view class="weui-cells weui-cells_after-title">
+		<view class="weui-cell weui-cell_select">
+			<view class="weui-cell__bd">
+				<picker bindchange="bindAccountChange" value="{{accountIndex}}" range="{{accounts}}">
+					<view class="weui-select">{{accounts[accountIndex]}}</view>
+				</picker>
+			</view>
+		</view>
+	</view>
+	<!-- 选择竞赛范围 -->
+	<view class="weui-cells__title">竞赛范围</view>
+	<view class="weui-cells weui-cells_after-title">
+		<view class="weui-cell weui-cell_select">
+			<view class="weui-cell__bd">
+				<picker bindchange="bindAccountChange2" value="{{accountIndex2}}" range="{{accounts2}}">
+					<view class="weui-select">{{accounts2[accountIndex2]}}</view>
+				</picker>
+			</view>
+		</view>
+	</view>
+	<!-- 获奖级别 -->
+	<view class="weui-cells__title">获奖等级</view>
+	<view class="weui-cells weui-cells_after-title">
+		<view class="weui-cell weui-cell_select">
+			<view class="weui-cell__bd">
+				<picker bindchange="bindAccountChange3" value="{{accountIndex3}}" range="{{accounts3}}">
+					<view class="weui-select">{{accounts3[accountIndex3]}}</view>
+				</picker>
+			</view>
+		</view>
+	</view>
+
+	<!-- 个人/团体
+	<view class="weui-cells__title">个人/团体</view>
+	<view class="weui-cells weui-cells_after-title">
+		<view class="weui-cell weui-cell_select">
+			<view class="weui-cell__bd">
+				<picker bindchange="bindAccountChange4" value="{{accountIndex4}}" range="{{accounts4}}">
+					<view class="weui-select">{{accounts4[accountIndex4]}}</view>
+				</picker>
+			</view>
+		</view>
+	</view> -->
+
+	<!-- 确认提交按钮 -->
+	<view class="page__bd">
+		<view class="weui-btn-area">
+			<button class="weui-btn" type="primary" bindtap="openConfirm">确认提交</button>
+		</view>
+	</view>
+	<mp-dialog title="确认提交" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+		<view>请确认所填信息准确无误后再提交！</view>
+	</mp-dialog>
+
+</view>

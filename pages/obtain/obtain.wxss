@@ -1,0 +1,14 @@
+/* pages/obtain/obtain.wxss */
+
+page {
+    background-color: #f8f8f8;
+}
+
+.weui-cell {
+    background-color: #fff !important;
+    border-top: 1px solid #eee;
+}
+
+.weui-label {
+    width: 90px;
+}
