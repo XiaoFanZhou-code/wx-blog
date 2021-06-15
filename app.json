@@ -8,7 +8,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#800080",
-    "navigationBarTitleText": "信息采集",
+    "navigationBarTitleText": "测试",
     "navigationBarTextStyle": "white"
   },
   "style": "v2",
@@ -22,25 +22,25 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页",
+        "text": "1",
         "iconPath": "/static/tabbar/home.png",
         "selectedIconPath": "/static/tabbar/home_active.png"
       },
       {
         "pagePath": "pages/archive/archive",
-        "text": "日志",
+        "text": "2",
         "iconPath": "/static/tabbar/category.png",
         "selectedIconPath": "/static/tabbar/category_active.png"
       },
       {
         "pagePath": "pages/logs/logs",
-        "text": "归档",
+        "text": "3",
         "iconPath": "/static/tabbar/category.png",
         "selectedIconPath": "/static/tabbar/category_active.png"
       },
       {
         "pagePath": "pages/mine/mine",
-        "text": "关于笔者",
+        "text": "4",
         "iconPath": "/static/tabbar/category.png",
         "selectedIconPath": "/static/tabbar/category_active.png"
       }
