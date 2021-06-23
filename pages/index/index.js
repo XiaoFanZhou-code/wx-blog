@@ -5,22 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-    dateString: "",
-    spot: ['2020/8/6', '2020/8/9', '2020/8/20', '2020/9/12']
-  },
-  dateChange(e) {
-    console.log("选中日期变了,现在日期是", e.detail.dateString)
-    this.setData({
-      dateString: e.detail.dateString
-    })
+
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      dateString: new Date().toLocaleDateString()
-    })
+
   },
 
   /**
