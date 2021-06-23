@@ -1,1 +1,101 @@
+<view>
 <!--index.wxml-->
+<view class="container">
+    <!--轮播图-->
+  <swiper class="home-swiper" indicator-dots="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for-items="{{lunboData}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item.imgurl}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 文章搜索框 -->
+<view class="search">
+  <van-search
+    value="{{ value }}"
+    input-align="center"
+    placeholder="搜索你感兴趣的内容..."
+    shape="round"
+  />
+</view>
+<view>
+  <view class="article">
+    <view class="articleIcon"></view>
+    最新文章
+  </view>
+</view>
+<!-- 文章内容 -->
+<view class="content-box">
+  <image src="../../static/images/WechatIMG56.jpeg" class="contentImage"></image>
+  <view class="content">在过去 4 年时间里， Laravel 每6个月就会发布一个新的“主要”版本。 在采用“语义化版本控制”标准之前， Laravel 版本号的第二个数字每6个月更换一次。 随着语义化版本控制的采用，Laravel 版本号中的第一个数字每6个月更改一次</view>
+  <view class="bottom">
+    <text class="category">Laravel</text>
+    <view class="content">
+      <image src="../../static/icon/createTime.png" class="iconImages"/>
+      2021-03-23
+    </view>
+    <view class="content">
+      <image src="../../static/icon/comments.png" class="commentsImages"/>
+      2
+    </view>
+    <view class="content">
+      <image src="../../static/icon/view.png" class="commentsImages"/>
+      66
+    </view>
+    <view class="content">
+      <image src="../../static/icon/praise.png" class="commentsImages"/>
+      66
+    </view>
+  </view>
+</view>
+
+<view class="content-box">
+  <image src="../../static/images/WechatIMG56.jpeg" class="contentImage"></image>
+  <view class="content">在过去 4 年时间里， Laravel 每6个月就会发布一个新的“主要”版本。 在采用“语义化版本控制”标准之前， Laravel 版本号的第二个数字每6个月更换一次。 随着语义化版本控制的采用，Laravel 版本号中的第一个数字每6个月更改一次</view>
+  <view class="bottom">
+    <text class="category">Laravel</text>
+    <view class="content">
+      <image src="../../static/icon/createTime.png" class="iconImages"/>
+      2021-03-23
+    </view>
+    <view class="content">
+      <image src="../../static/icon/comments.png" class="commentsImages"/>
+      2
+    </view>
+    <view class="content">
+      <image src="../../static/icon/view.png" class="commentsImages"/>
+      66
+    </view>
+    <view class="content">
+      <image src="../../static/icon/praise.png" class="commentsImages"/>
+      66
+    </view>
+  </view>
+</view>
+
+<view class="content-box">
+  <image src="../../static/images/WechatIMG56.jpeg" class="contentImage"></image>
+  <view class="content">在过去 4 年时间里， Laravel 每6个月就会发布一个新的“主要”版本。 在采用“语义化版本控制”标准之前， Laravel 版本号的第二个数字每6个月更换一次。 随着语义化版本控制的采用，Laravel 版本号中的第一个数字每6个月更改一次</view>
+  <view class="bottom">
+    <text class="category">Laravel</text>
+    <view class="content">
+      <image src="../../static/icon/createTime.png" class="iconImages"/>
+      2021-03-23
+    </view>
+    <view class="content">
+      <image src="../../static/icon/comments.png" class="commentsImages"/>
+      2
+    </view>
+    <view class="content">
+      <image src="../../static/icon/view.png" class="commentsImages"/>
+      66
+    </view>
+    <view class="content">
+      <image src="../../static/icon/praise.png" class="commentsImages"/>
+      66
+    </view>
+  </view>
+</view>
+</view>
