@@ -38,13 +38,13 @@
     "packNpmRelationList": [
       {
         "packageJsonPath": "./package.json",
-        "miniprogramNpmDistDir": "./"
+        "miniprogramNpmDistDir": "./miniprogram_npm/"
       }
     ],
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.12.2",
+  "libVersion": "2.19.0",
   "appid": "wxadbe315baea70ad1",
   "projectname": "wx-mangement",
   "debugOptions": {
@@ -69,16 +69,6 @@
     },
     "gamePlugin": {
       "list": []
-    },
-    "miniprogram": {
-      "list": [
-        {
-          "id": -1,
-          "name": "学术信息采集",
-          "pathName": "pages/academic/academic",
-          "scene": null
-        }
-      ]
     }
   }
 }

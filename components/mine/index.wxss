@@ -1,0 +1,149 @@
+/* components/mine/index.wxss */
+
+page {
+  background-color: #f5f5f5;
+}
+
+.mine-box {
+  width: 570rpx;
+  height: 1000rpx;
+  background: #f5f5f5;
+  border-radius: 42rpx;
+}
+
+.head-main {
+  width: 570rpx;
+  background: #FFF;
+  border-radius: 42rpx;
+}
+
+.head {
+  display: flex;
+}
+
+.head-avatar {
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+  padding-top: 20rpx;
+}
+
+.head-title {
+  margin-top: 55rpx;
+}
+
+.blog-name {
+  margin-bottom: 12rpx;
+}
+
+.role {
+  text-align: center;
+  align-items: center;
+  font-size: 25rpx;
+  color: #AFB0AF;
+  height: 45rpx;
+  line-height: 45rpx;
+  background: #f5f5f5;
+  border-radius: 13rpx;
+}
+
+image {
+  width: 33rpx;
+  height: 33rpx;
+}
+
+.data-stand {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 21rpx;
+}
+
+.cut-off-rule {
+  border-right: 5rpx solid #f5f5f5;
+  padding-right: 20rpx;
+  margin-left: -20rpx;
+}
+
+.flex {
+  display: flex;
+}
+
+.view-icon {
+  margin-top: 6rpx;
+}
+
+.view-data {
+  color: var(--orange);
+  margin-left: 33rpx;
+  font-size: 40rpx;
+  font-family: 500;
+}
+
+.title-style {
+  font-size: 26rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #AFB0AF;
+}
+
+.praise-data {
+  color: var(--blue);
+  font-size: 40rpx;
+  font-family: 500;
+}
+
+.operation-data {
+  margin-left: 19rpx;
+  color: var(--green);
+  font-size: 40rpx;
+  font-family: 500;
+}
+
+.operation {
+  margin-left: -30rpx;
+}
+
+.praise-icon {
+  width: 26rpx;
+  height: 26rpx;
+  margin-top: 6rpx;
+}
+
+.operation-icon {
+  margin-top: 5rpx;
+}
+
+.content-box {
+  margin: 40rpx;
+  width: 490rpx;
+  height: 530rpx;
+  border-radius: 50rpx;
+  background: #FFF;
+}
+
+.content-main {
+  padding-top: 30rpx;
+  padding-left: 30rpx;
+}
+
+.content-item {
+  margin-bottom: 10rpx;
+  margin-right: 40rpx;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 66rpx;
+  border-bottom: 3rpx solid #f5f5f5;
+}
+
+.icon {
+  margin: 5rpx 13rpx 0 20rpx;
+}
+
+.content-title {
+  color: #AFB0AF;
+}
+
+.version {
+  margin-left: 40rpx;
+  color: #AFB0AF;
+}

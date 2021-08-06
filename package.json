@@ -10,7 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vant/weapp": "^1.6.9",
+    "@vant/weapp": "^1.7.2",
+    "uview-ui": "^1.8.4",
     "weui-miniprogram": "^1.0.5"
+  },
+  "devDependencies": {
+    "miniprogram-api-typings": "^3.4.2"
   }
 }

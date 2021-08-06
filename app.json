@@ -1,8 +1,6 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/mine/mine",
     "pages/archive/archive"
   ],
   "window": {
@@ -29,18 +27,6 @@
         "text": "分类",
         "iconPath": "/static/tabbar/category.png",
         "selectedIconPath": "/static/tabbar/category_active.png"
-      },
-      {
-        "pagePath": "pages/logs/logs",
-        "text": "专栏",
-        "iconPath": "/static/tabbar/column.png",
-        "selectedIconPath": "/static/tabbar/column_active.png"
-      },
-      {
-        "pagePath": "pages/mine/mine",
-        "text": "我的",
-        "iconPath": "/static/tabbar/me.png",
-        "selectedIconPath": "/static/tabbar/me_active.png"
       }
     ]
   }
