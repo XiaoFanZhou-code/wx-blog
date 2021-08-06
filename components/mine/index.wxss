@@ -146,4 +146,5 @@ image {
 .version {
   margin-left: 40rpx;
   color: #AFB0AF;
+  
 }
