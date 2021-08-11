@@ -1,0 +1,5 @@
+/* pages/home/index.wxss */
+.bjImage {
+  width: 100%;
+  height: 400rpx;
+}

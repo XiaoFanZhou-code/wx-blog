@@ -2,7 +2,8 @@
   "usingComponents": {
     "van-search": "@vant/weapp/search/index",
     "van-popup": "@vant/weapp/popup/index",
-    "mine": "/components/mine/index"
+    "mine": "/components/mine/index",
+    "home": "/pages/home/index"
   },
   "navigationStyle": "custom"
 }

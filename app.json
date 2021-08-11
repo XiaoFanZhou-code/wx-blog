@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/archive/archive"
+    "pages/archive/archive",
+    "pages/home/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
