@@ -1,0 +1,6 @@
+<!--pages/classification/index.wxml-->
+<van-sidebar active-key="{{ activeKey }}" bind:change="onChange">
+  <van-sidebar-item title="微信小程序" />
+  <van-sidebar-item title="前端" />
+  <van-sidebar-item title="node.js服务器" />
+</van-sidebar>

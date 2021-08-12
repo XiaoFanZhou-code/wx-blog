@@ -1,65 +1,91 @@
 //index.js
+//获取应用实例
+const app = getApp()
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    StatusBar: app.globalData.StatusBar,
+    CustomBar: app.globalData.CustomBar,
+    Custom: app.globalData.Custom,
+    hasUserInfo: false,
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    TabCur: 1,
+    scrollLeft: 0
   },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  getUserInfo: function (e) {
+    console.log(e)
+    app.globalData.userInfo = e.detail.userInfo
+    this.setData({
+      userInfo: e.detail.userInfo,
+      hasUserInfo: true
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  // showModal(e) {
+  //   console.log(e)
+  //   this.setData({
+  //     modalName: e.currentTarget.dataset.target
+  //   })
+  // },
+  hideModal(e) {
+    this.setData({
+      modalName: null
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  tabSelect(e) {
+    console.log(e);
+    this.setData({
+      TabCur: e.currentTarget.dataset.id,
+      scrollLeft: (e.currentTarget.dataset.id - 1) * 60
+    })
   },
 
   /**
-   * 页面相关事件处理函数--监听用户下拉动作
+   * 触摸开始
+   * @param {*} e 
    */
-  onPullDownRefresh: function () {
-
+   touchStart: function (e) {
+    if (e.touches.length == 1) {
+      this.setData({
+        startX: e.touches[0].clientX
+      });
+    }
   },
 
   /**
-   * 页面上拉触底事件的处理函数
+   * 手指移动
+   * @param {*} e 
    */
-  onReachBottom: function () {
-
+  touchMove: function (e) {
+    if (e.touches.length == 1) {
+      var moveX = e.touches[0].clientX;
+      var towards = this.data.startX - moveX;
+      this.setData({
+        towards: towards
+      })
+    }
   },
 
   /**
-   * 用户点击右上角分享
+   * 触摸结束
+   * @param {*} e 
    */
-  onShareAppMessage: function () {
-
-  }
+  touchEnd: function (e) {
+    let that = this
+    if (that.data.towards != '') {
+      if (that.data.towards < 0) {//向右
+        console.log('向右')
+        this.setData({
+          modalName: "viewModal"
+        })
+      }
+      if(that.data.towards > 0) {
+        this.setData({
+          modalName: null
+        })
+      }
+    }
+    that.setData({
+      towards: ''
+    })
+  },
 })

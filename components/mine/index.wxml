@@ -1,0 +1,59 @@
+<!--components/mine/index.wxml-->
+<view class="mine-box">
+  <view class="head-main">
+    <!-- 头像、名字和角色 -->
+    <view class="head">
+      <view class="head-avatar">
+        <van-image
+          round
+          width="5rem"
+          height="5rem"
+          src="https://img.yzcdn.cn/vant/cat.jpeg"/>
+      </view>
+      <view class="head-title">
+        <view class="blog-name">前端客栈</view>
+        <view class="role">管理员</view>
+      </view>
+    </view>
+    <!-- 访问人数、点赞数和建站天数 -->
+    <view class="data-stand">
+      <view class="cut-off-rule">
+        <view class="view-data">2.4w</view>
+        <view class="flex">
+          <image src="../../static/icon/view.png" class="view-icon"/>
+          <view class="title-style">访问人数</view>
+        </view>
+      </view>
+      <view class="cut-off-rule">
+        <view class="praise-data">2.4w</view>
+        <view class="flex">
+          <image src="../../static/icon/praise2.png" class="praise-icon"/>
+          <view class="title-style">点赞人数</view>
+        </view>
+      </view>
+      <view>
+        <view class="operation-data">1天</view>
+        <view class="flex operation">
+          <image src="../../static/icon/operation.png" class="operation-icon"/>
+          <view class="title-style">建站天数</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="content-box">
+    <view class="content-main">
+      <view wx:for="{{ functionBar }}" wx:key="index" class="content-item flex" bindtap="goTo" data-name="{{item.name}}">
+        <view class="flex">
+          <image src="{{ item.icon }}" class="icon"/>
+          <view class="content-title">{{ item.name }}</view>
+          </view>
+        <view>
+          <image src="{{ item.link }}"/>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+  <view class="version">V1.0.0</view>
+</view>
