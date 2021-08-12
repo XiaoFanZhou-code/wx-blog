@@ -39,10 +39,13 @@
 - [ ] 博客运行天数和访问人数统计
 
 #### 打赏作者
-<img src='https://shengfeng-1302322675.cos.ap-shanghai.myqcloud.com/WechatIMG11.png' style="
+<div style="
     height: 260px;
     width: 260px;
-"></img>
+">
+<img src='https://shengfeng-1302322675.cos.ap-shanghai.myqcloud.com/WechatIMG11.png' ></img>
+
+</div>
 #### 开发贡献者
 
 | 加入日期 | 名称 |
