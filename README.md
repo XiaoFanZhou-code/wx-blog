@@ -5,6 +5,7 @@
 2. 本博客是开源项目，支持个人学习使用，不支持也不可以商用，违者必究！！
 3. 免费开源不易，使用者希望注明出处哦，记得点个star哦
 4. 持续更新和维护，目前正在开发中，尽请期待哦～～～
+5. 同时也希望有更多的人加进来和我们一起开发和维护好这个开源项目～～
 
 <img src="https://shengfeng-1302322675.cos.ap-shanghai.myqcloud.com/blog1.png" >
 <img src="https://shengfeng-1302322675.cos.ap-shanghai.myqcloud.com/blog2.png" >
