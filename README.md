@@ -40,7 +40,7 @@
 
 #### 打赏作者
 
-<img src='https://shengfeng-1302322675.cos.ap-shanghai.myqcloud.com/WechatIMG11.png' style='width:100px;height: 100px;'></img>
+<img src='https://shengfeng-1302322675.cos.ap-shanghai.myqcloud.com/WechatIMG11.png' style='width:50px;height: 50px;'></img>
 #### 开发贡献者
 
 | 加入日期 | 名称 |
