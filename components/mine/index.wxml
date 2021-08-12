@@ -43,7 +43,7 @@
 
   <view class="content-box">
     <view class="content-main">
-      <view wx:for="{{ functionBar }}" wx:key="index" class="content-item flex">
+      <view wx:for="{{ functionBar }}" wx:key="index" class="content-item flex" bindtap="goTo" data-name="{{item.name}}">
         <view class="flex">
           <image src="{{ item.icon }}" class="icon"/>
           <view class="content-title">{{ item.name }}</view>

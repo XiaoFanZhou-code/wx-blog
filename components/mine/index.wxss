@@ -6,7 +6,6 @@ page {
 
 .mine-box {
   width: 570rpx;
-  height: 1000rpx;
   background: #f5f5f5;
   border-radius: 42rpx;
 }
@@ -113,9 +112,9 @@ image {
 }
 
 .content-box {
+  padding-bottom: 22rpx;
   margin: 40rpx;
   width: 490rpx;
-  height: 530rpx;
   border-radius: 50rpx;
   background: #FFF;
 }

@@ -60,8 +60,6 @@
       </view>
     </view>
   </view>
-
-
   <view class="cu-item shadow">
     <view class="image">
       <image src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg" mode="widthFix"></image>

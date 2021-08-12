@@ -33,6 +33,11 @@ Component({
         icon: "../../static/icon/timeLine.png"
       },
       {
+        name: "分类",
+        link: "../../static/icon/rightArrow.png",
+        icon: "../../static/icon/classification.png"
+      },
+      {
         name: "消息",
         link: "../../static/icon/rightArrow.png",
         icon: "../../static/icon/message.png"
@@ -49,6 +54,24 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    /**
+     * 挑战界面
+     * @param {*} e 侧栏名字
+     */
+    goTo(e) {
+      console.log(e.currentTarget.dataset);
+      let label = e.currentTarget.dataset.name;
+      switch(label) {
+        case label = "时间线":
+          wx.navigateTo({
+            url: '/pages/timeLime/index'
+          })
+          break;
+        case label = "分类":
+          wx.navigateTo({
+            url: '/pages/classification/index'
+          })
+      }
+    }
   }
 })

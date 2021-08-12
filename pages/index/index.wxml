@@ -8,12 +8,6 @@
 		<scroll-view scroll-y class="DrawerWindow {{modalName=='viewModal'?'show':''}}">
 			<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg">
 				<mine></mine>
-				<!-- <view class="cu-item arrow" wx:for="{{10}}" wx:key="index">
-					<view class="content">
-						<text class="cuIcon-github text-grey"></text>
-						<text class="text-grey">{{index +1}}</text>
-					</view>
-				</view> -->
 			</view>
 		</scroll-view>
 </view>

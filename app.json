@@ -2,33 +2,14 @@
   "pages": [
     "pages/index/index",
     "pages/archive/archive",
-    "pages/home/index"
+    "pages/home/index",
+    "pages/timeLime/index",
+    "pages/classification/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#FED71A",
     "navigationBarTextStyle": "white"
   },
-  "sitemapLocation": "sitemap.json",
-  "tabBar": {
-    "color": "",
-    "selectedColor": "#FED71A",
-    "backgroundColor": "",
-    "position": "bottom",
-    "borderStyle": "black",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "/static/tabbar/home.png",
-        "selectedIconPath": "/static/tabbar/home_active.png"
-      },
-      {
-        "pagePath": "pages/archive/archive",
-        "text": "分类",
-        "iconPath": "/static/tabbar/category.png",
-        "selectedIconPath": "/static/tabbar/category_active.png"
-      }
-    ]
-  }
+  "sitemapLocation": "sitemap.json"
 }
