@@ -6,6 +6,9 @@
 3. 免费开源不易，使用者希望注明出处哦，记得点个star哦
 4. 持续更新和维护，目前正在开发中，尽请期待哦～～～
 
+<img src="https://shengfeng-1302322675.cos.ap-shanghai.myqcloud.com/blog1.png" >
+<img src="https://shengfeng-1302322675.cos.ap-shanghai.myqcloud.com/blog2.png" >
+
 #### 软件架构
 1. 基于微信小程序原生框架开发
 2. 使用到的框架有：vant组件、ColorUI
@@ -24,6 +27,9 @@
 - [x] 右滑动显示个人中心栏
 - [x] 文章列表
 - [x] 配套的web端后台管理系统
+- [ ] 博客标签
+- [ ] 博客标签
+- [ ] 博客分类
 - [ ] 博文展示
 - [ ] 游客登录注册
 - [ ] 评论与回复
@@ -42,6 +48,11 @@
 
 <img src='https://shengfeng-1302322675.cos.ap-shanghai.myqcloud.com/WechatIMG11.png' width="260px" height="260px"></img>
 
+#### 加入QQ群和关注公众号，获取最新资讯
+<div style="display: flex;">
+  <img src='https://shengfeng-1302322675.cos.ap-shanghai.myqcloud.com/QQGroup.jpeg' width="260px" height="260px"></img>
+  <img src='https://shengfeng-1302322675.cos.ap-shanghai.myqcloud.com/public.jpeg' width="260px" height="260px"></img>
+</div>
 #### 开发贡献者
 
 | 加入日期 | 名称 |
