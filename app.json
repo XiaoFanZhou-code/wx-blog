@@ -4,7 +4,8 @@
     "pages/archive/archive",
     "pages/home/index",
     "pages/timeLime/index",
-    "pages/classification/index"
+    "pages/classification/index",
+    "pages/content/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

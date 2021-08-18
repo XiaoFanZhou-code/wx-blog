@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-tag": "@vant/weapp/tag/index",
+    "mp-html": "../../miniprogram_npm/miniprogram_npm/mp-html",
+    "van-search": "@vant/weapp/search/index",
+    "van-share-sheet": "@vant/weapp/share-sheet/index"
+  }
+}

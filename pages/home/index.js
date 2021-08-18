@@ -47,13 +47,21 @@ Page({
 
   },
 
-    // cardSwiper
-    cardSwiper(e) {
+  // cardSwiper
+  cardSwiper(e) {
       this.setData({
         cardCur: e.detail.current
       })
     },
 
+  /**
+   * 跳转到内容详情页
+   */
+   goContent() {
+     wx.navigateTo({
+      url: '/pages/content/index'
+    })
+   },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
