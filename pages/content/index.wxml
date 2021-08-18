@@ -2,7 +2,7 @@
 <view>
   <!-- 头部 -->
   <view>
-    <view class="title">ES6箭头函数你正确使用了吗？</view>
+    <view class="title">ES6箭头函数你正确使用了吗？??</view>
     <view class="createTime">
       <image src="../../static/icon/createTime.png" class="timeIcon"/>
       2021-08-12 11:30:20
