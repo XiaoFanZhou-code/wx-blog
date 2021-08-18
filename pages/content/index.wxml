@@ -1,0 +1,48 @@
+<!--pages/content/index.wxml-->
+<view>
+  <!-- 头部 -->
+  <view>
+    <view class="title">ES6箭头函数你正确使用了吗？</view>
+    <view class="createTime">
+      <image src="../../static/icon/createTime.png" class="timeIcon"/>
+      2021-08-12 11:30:20
+    </view>
+  </view>
+  <!-- 主体内容 -->
+  <view class="contentBox">
+    <!-- tag标签 -->
+    <view class="tag">
+      <van-tag plain type="success" class="label">标签</van-tag>
+      <van-tag plain type="warning">分类</van-tag>
+    </view>
+    <!-- 富文本 -->
+    <view class="parser">
+      <mp-html content="{{ prizeIntroduction }}"/>
+    </view>
+  </view>
+
+  <!--底部栏的背景层-->
+  <view class="baise"></view>
+  <!--底部栏-->
+  <view class="anniu">
+    <van-search
+      value="{{ value }}"
+      shape="round"
+      background="#f6d365"
+      use-left-icon-slot="true"
+      placeholder="评论改文章内容"/>
+    <view class="iconBox">
+      <image src="../../static/icon/praise2.png" class="praiseIcon"/>
+      <image src="../../static/icon/collect.png" class="collectIcon"/>
+      <image src="../../static/icon/more.png" class="moreIcon" bindtap="handleMore"/>
+    </view>
+   </view>
+   <!-- 分享面板 -->
+  <van-share-sheet
+    show="{{ showShare }}"
+    title="立即分享给好友"
+    options="{{ options }}"
+    bind:select="onSelect"
+    bind:close="onClose"
+  />
+</view>

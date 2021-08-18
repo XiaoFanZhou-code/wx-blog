@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@vant/weapp": "^1.7.2",
+    "mp-html": "^2.1.5",
     "uview-ui": "^1.8.4",
     "weui-miniprogram": "^1.0.5"
   },

@@ -23,6 +23,12 @@
           "pathName": "pages/classification/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "内容界面",
+          "pathName": "pages/content/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

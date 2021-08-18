@@ -1,0 +1,89 @@
+/* pages/content/index.wxss */
+page {
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-size: 38rpx;
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+.createTime {
+  display: flex;
+  justify-content: center;
+  font-size: 27rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #999999;
+}
+
+.timeIcon {
+  margin-top: 4rpx;
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+
+.contentBox {
+  background-color: #fff;
+  border-radius: 20rpx;
+  margin: 20rpx;
+}
+
+.tag {
+  margin-left: 20rpx;
+  padding-top: 20rpx;
+}
+
+.label {
+  margin-right: 10rpx;
+}
+
+.parser {
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+}
+
+/* 底部按钮 */
+.baise{
+  background: #f6d365;
+  display:flex;
+  position:fixed; 
+  width:100%;
+  height:100rpx;
+  z-index:665;
+  bottom:0rpx;
+}
+.anniu{
+display:flex;
+position:fixed; 
+width:95%;
+z-index:666;
+bottom:-8rpx;
+}
+
+.iconBox {
+  margin-top: 28rpx;
+  margin-left: 50rpx;
+}
+
+.collectIcon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 50rpx;
+}
+
+.praiseIcon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 50rpx;
+}
+
+.moreIcon {
+  width: 40rpx;
+  height: 40rpx;
+}

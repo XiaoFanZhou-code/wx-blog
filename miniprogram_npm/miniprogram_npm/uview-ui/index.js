@@ -4,7 +4,7 @@ var __DEFINE__ = function(modId, func, req) { var m = { exports: {}, _tempexport
 var __REQUIRE__ = function(modId, source) { if(!__MODS__[modId]) return require(source); if(!__MODS__[modId].status) { var m = __MODS__[modId].m; m._exports = m._tempexports; var desp = Object.getOwnPropertyDescriptor(m, "exports"); if (desp && desp.configurable) Object.defineProperty(m, "exports", { set: function (val) { if(typeof val === "object" && val !== m._exports) { m._exports.__proto__ = val.__proto__; Object.keys(val).forEach(function (k) { m._exports[k] = val[k]; }); } m._tempexports = val }, get: function () { return m._tempexports; } }); __MODS__[modId].status = 1; __MODS__[modId].func(__MODS__[modId].req, m, m.exports); } return __MODS__[modId].m.exports; };
 var __REQUIRE_WILDCARD__ = function(obj) { if(obj && obj.__esModule) { return obj; } else { var newObj = {}; if(obj != null) { for(var k in obj) { if (Object.prototype.hasOwnProperty.call(obj, k)) newObj[k] = obj[k]; } } newObj.default = obj; return newObj; } };
 var __REQUIRE_DEFAULT__ = function(obj) { return obj && obj.__esModule ? obj.default : obj; };
-__DEFINE__(1627983444680, function(require, module, exports) {
+__DEFINE__(1629271229771, function(require, module, exports) {
 // 引入全局mixin
 var __TEMP__ = require('./libs/mixin/mixin.js');var mixin = __REQUIRE_DEFAULT__(__TEMP__);
 // 引入关于是否mixin集成小程序分享的配置
@@ -146,8 +146,8 @@ const install = Vue => {
 if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: true });exports.default = {
 	install
 };
-}, function(modId) {var map = {"./libs/mixin/mixin.js":1627983444681,"./libs/request":1627983444682,"./libs/function/queryParams.js":1627983444686,"./libs/function/route.js":1627983444687,"./libs/function/timeFormat.js":1627983444688,"./libs/function/timeFrom.js":1627983444689,"./libs/function/colorGradient.js":1627983444690,"./libs/function/guid.js":1627983444691,"./libs/function/color.js":1627983444692,"./libs/function/type2icon.js":1627983444693,"./libs/function/randomArray.js":1627983444694,"./libs/function/deepClone.js":1627983444684,"./libs/function/deepMerge.js":1627983444683,"./libs/function/addUnit.js":1627983444695,"./libs/function/test.js":1627983444685,"./libs/function/random.js":1627983444696,"./libs/function/trim.js":1627983444697,"./libs/function/toast.js":1627983444698,"./libs/function/getParent.js":1627983444699,"./libs/function/$parent.js":1627983444700,"./libs/function/sys.js":1627983444701,"./libs/function/debounce.js":1627983444702,"./libs/function/throttle.js":1627983444703,"./libs/config/config.js":1627983444704,"./libs/config/zIndex.js":1627983444705}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444681, function(require, module, exports) {
+}, function(modId) {var map = {"./libs/mixin/mixin.js":1629271229772,"./libs/request":1629271229773,"./libs/function/queryParams.js":1629271229777,"./libs/function/route.js":1629271229778,"./libs/function/timeFormat.js":1629271229779,"./libs/function/timeFrom.js":1629271229780,"./libs/function/colorGradient.js":1629271229781,"./libs/function/guid.js":1629271229782,"./libs/function/color.js":1629271229783,"./libs/function/type2icon.js":1629271229784,"./libs/function/randomArray.js":1629271229785,"./libs/function/deepClone.js":1629271229775,"./libs/function/deepMerge.js":1629271229774,"./libs/function/addUnit.js":1629271229786,"./libs/function/test.js":1629271229776,"./libs/function/random.js":1629271229787,"./libs/function/trim.js":1629271229788,"./libs/function/toast.js":1629271229789,"./libs/function/getParent.js":1629271229790,"./libs/function/$parent.js":1629271229791,"./libs/function/sys.js":1629271229792,"./libs/function/debounce.js":1629271229793,"./libs/function/throttle.js":1629271229794,"./libs/config/config.js":1629271229795,"./libs/config/zIndex.js":1629271229796}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1629271229772, function(require, module, exports) {
 module.exports = {
 	data() {
 		return {}
@@ -214,7 +214,7 @@ module.exports = {
 }
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444682, function(require, module, exports) {
+__DEFINE__(1629271229773, function(require, module, exports) {
 var __TEMP__ = require('../function/deepMerge');var deepMerge = __REQUIRE_DEFAULT__(__TEMP__);
 var __TEMP__ = require('../function/test');var validate = __REQUIRE_DEFAULT__(__TEMP__);
 class Request {
@@ -385,8 +385,8 @@ class Request {
 }
 if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: true });exports.default = new Request;
 
-}, function(modId) { var map = {"../function/deepMerge":1627983444683,"../function/test":1627983444685}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444683, function(require, module, exports) {
+}, function(modId) { var map = {"../function/deepMerge":1629271229774,"../function/test":1629271229776}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1629271229774, function(require, module, exports) {
 var __TEMP__ = require('./deepClone');var deepClone = __REQUIRE_DEFAULT__(__TEMP__);
 
 // JS对象深度合并
@@ -417,8 +417,8 @@ function deepMerge(target = {}, source = {}) {
 }
 
 if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: true });exports.default = deepMerge;
-}, function(modId) { var map = {"./deepClone":1627983444684}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444684, function(require, module, exports) {
+}, function(modId) { var map = {"./deepClone":1629271229775}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1629271229775, function(require, module, exports) {
 // 判断arr是否为一个数组，返回一个bool值
 function isArray (arr) {
     return Object.prototype.toString.call(arr) === '[object Array]';
@@ -444,7 +444,7 @@ function deepClone (obj) {
 if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: true });exports.default = deepClone;
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444685, function(require, module, exports) {
+__DEFINE__(1629271229776, function(require, module, exports) {
 /**
  * 验证电子邮箱格式
  */
@@ -679,7 +679,7 @@ if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: t
 };
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444686, function(require, module, exports) {
+__DEFINE__(1629271229777, function(require, module, exports) {
 /**
  * 对象转url参数
  * @param {*} data,对象
@@ -740,7 +740,7 @@ function queryParams(data = {}, isPrefix = true, arrayFormat = 'brackets') {
 if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: true });exports.default = queryParams;
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444687, function(require, module, exports) {
+__DEFINE__(1629271229778, function(require, module, exports) {
 /**
  * 路由跳转方法，该方法相对于直接使用uni.xxx的好处是使用更加简单快捷
  * 并且带有路由拦截功能
@@ -864,7 +864,7 @@ class Router {
 
 if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: true });exports.default = (new Router()).route;
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444688, function(require, module, exports) {
+__DEFINE__(1629271229779, function(require, module, exports) {
 // padStart 的 polyfill，因为某些机型或情况，还无法支持es7的padStart，比如电脑版的微信小程序
 // 所以这里做一个兼容polyfill的兼容处理
 if (!String.prototype.padStart) {
@@ -918,7 +918,7 @@ function timeFormat(dateTime = null, fmt = 'yyyy-mm-dd') {
 if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: true });exports.default = timeFormat;
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444689, function(require, module, exports) {
+__DEFINE__(1629271229780, function(require, module, exports) {
 var __TEMP__ = require('../../libs/function/timeFormat.js');var timeFormat = __REQUIRE_DEFAULT__(__TEMP__);
 
 /**
@@ -967,8 +967,8 @@ function timeFrom(dateTime = null, format = 'yyyy-mm-dd') {
 
 if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: true });exports.default = timeFrom;
 
-}, function(modId) { var map = {"../../libs/function/timeFormat.js":1627983444688}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444690, function(require, module, exports) {
+}, function(modId) { var map = {"../../libs/function/timeFormat.js":1629271229779}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1629271229781, function(require, module, exports) {
 /**
  * 求两个颜色之间的渐变值
  * @param {string} startColor 开始的颜色
@@ -1104,7 +1104,7 @@ if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: t
 	colorToRgba
 };
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444691, function(require, module, exports) {
+__DEFINE__(1629271229782, function(require, module, exports) {
 /**
  * 本算法来源于简书开源代码，详见：https://www.jianshu.com/p/fdbf293d0a85
  * 全局唯一标识符（uuid，Globally Unique Identifier）,也称作 uuid(Universally Unique IDentifier) 
@@ -1148,7 +1148,7 @@ function guid(len = 32, firstU = true, radix = null) {
 if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: true });exports.default = guid;
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444692, function(require, module, exports) {
+__DEFINE__(1629271229783, function(require, module, exports) {
 // 为了让用户能够自定义主题，会逐步弃用此文件，各颜色通过css提供
 // 为了给某些特殊场景使用和向后兼容，无需删除此文件(2020-06-20)
 let color = {
@@ -1187,7 +1187,7 @@ let color = {
 
 if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: true });exports.default = color;
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444693, function(require, module, exports) {
+__DEFINE__(1629271229784, function(require, module, exports) {
 /**
  * 根据主题type值,获取对应的图标
  * @param String type 主题名称,primary|info|error|warning|success
@@ -1225,7 +1225,7 @@ function type2icon(type = 'success', fill = false) {
 if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: true });exports.default = type2icon;
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444694, function(require, module, exports) {
+__DEFINE__(1629271229785, function(require, module, exports) {
 // 打乱数组
 function randomArray(array = []) {
 	// 原理是sort排序,Math.random()产生0<= x < 1之间的数,会导致x-0.05大于或者小于0
@@ -1235,7 +1235,7 @@ function randomArray(array = []) {
 if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: true });exports.default = randomArray;
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444695, function(require, module, exports) {
+__DEFINE__(1629271229786, function(require, module, exports) {
 var __TEMP__ = require('./test.js');var validation = __REQUIRE_DEFAULT__(__TEMP__);
 
 // 添加单位，如果有rpx，%，px等单位结尾或者值为auto，直接返回，否则加上rpx单位结尾
@@ -1244,8 +1244,8 @@ if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: t
 	// 用uView内置验证规则中的number判断是否为数值
     return validation.number(value) ? `${value}${unit}` : value;
 };exports.default = addUnit
-}, function(modId) { var map = {"./test.js":1627983444685}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444696, function(require, module, exports) {
+}, function(modId) { var map = {"./test.js":1629271229776}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1629271229787, function(require, module, exports) {
 function random(min, max) {
 	if (min >= 0 && max > 0 && max >= min) {
 		let gab = max - min + 1;
@@ -1258,7 +1258,7 @@ function random(min, max) {
 if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: true });exports.default = random;
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444697, function(require, module, exports) {
+__DEFINE__(1629271229788, function(require, module, exports) {
 function trim(str, pos = 'both') {
 	if (pos == 'both') {
 		return str.replace(/^\s+|\s+$/g, "");
@@ -1276,7 +1276,7 @@ function trim(str, pos = 'both') {
 if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: true });exports.default = trim;
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444698, function(require, module, exports) {
+__DEFINE__(1629271229789, function(require, module, exports) {
 function toast(title, duration = 1500) {
 	uni.showToast({
 		title: title,
@@ -1288,7 +1288,7 @@ function toast(title, duration = 1500) {
 if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: true });exports.default = toast;
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444699, function(require, module, exports) {
+__DEFINE__(1629271229790, function(require, module, exports) {
 // 获取父组件的参数，因为支付宝小程序不支持provide/inject的写法
 // this.$parent在非H5中，可以准确获取到父组件，但是在H5中，需要多次this.$parent.$parent.xxx
 if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: true });function getParent(name, keys) {
@@ -1337,7 +1337,7 @@ if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: t
 	return {};
 };exports.default = getParent
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444700, function(require, module, exports) {
+__DEFINE__(1629271229791, function(require, module, exports) {
 // 获取父组件的参数，因为支付宝小程序不支持provide/inject的写法
 // this.$parent在非H5中，可以准确获取到父组件，但是在H5中，需要多次this.$parent.$parent.xxx
 // 这里默认值等于undefined有它的含义，因为最顶层元素(组件)的$parent就是undefined，意味着不传name
@@ -1357,7 +1357,7 @@ if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: t
 	return false;
 };exports.default = $parent
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444701, function(require, module, exports) {
+__DEFINE__(1629271229792, function(require, module, exports) {
 if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: true });function os() {
 	return uni.getSystemInfoSync().platform;
 };exports.os = os;
@@ -1369,7 +1369,7 @@ if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: t
 
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444702, function(require, module, exports) {
+__DEFINE__(1629271229793, function(require, module, exports) {
 let timeout = null;
 
 /**
@@ -1401,7 +1401,7 @@ function debounce(func, wait = 500, immediate = false) {
 if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: true });exports.default = debounce;
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444703, function(require, module, exports) {
+__DEFINE__(1629271229794, function(require, module, exports) {
 let timer, flag;
 /**
  * 节流原理：在一定时间内，只能触发一次
@@ -1436,7 +1436,7 @@ function throttle(func, wait = 500, immediate = true) {
 if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: true });exports.default = throttle;
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444704, function(require, module, exports) {
+__DEFINE__(1629271229795, function(require, module, exports) {
 // 此版本发布于2020-12-17
 let version = '1.8.3';
 
@@ -1453,7 +1453,7 @@ if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: t
 	]
 };
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1627983444705, function(require, module, exports) {
+__DEFINE__(1629271229796, function(require, module, exports) {
 // uniapp在H5中各API的z-index值如下：
 /**
  * actionsheet: 999
@@ -1475,7 +1475,7 @@ if (!exports.__esModule) Object.defineProperty(exports, "__esModule", { value: t
 	indexListSticky: 965,
 };
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-return __REQUIRE__(1627983444680);
+return __REQUIRE__(1629271229771);
 })()
 //miniprogram-npm-outsideDeps=[]
 //# sourceMappingURL=index.js.map
